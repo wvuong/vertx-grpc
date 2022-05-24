@@ -33,7 +33,7 @@ public class StubTest {
     serverStub.bind(grpcServer);
 
     // this code from the example doesn't compile
-    router.consumes("application/grpc").handler(grpcServer);
+    // router.consumes("application/grpc").handler(grpcServer);
 
     vertx.createHttpServer()
       .requestHandler(router)
